@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
         <Title></Title>
         <Description>ReportViewer for SSRS</Description>
         <PackageProjectUrl>https://github.com/ductran95/JustCSharp.ReportViewer</PackageProjectUrl>
@@ -11,6 +10,7 @@
         <Authors>Duc Tran</Authors>
         <Company>JustCSharp</Company>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <TargetFrameworks>net5.0;netcoreapp3.1;netstandard2.1</TargetFrameworks>
     </PropertyGroup>
 
     <ItemGroup>
