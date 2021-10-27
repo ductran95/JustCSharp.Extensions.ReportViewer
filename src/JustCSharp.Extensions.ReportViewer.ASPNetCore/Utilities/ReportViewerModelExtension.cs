@@ -1,7 +1,7 @@
 using System.Linq;
 using Microsoft.AspNetCore.Http;
 
-namespace JustCSharp.ReportViewer.ASPNetCore.Utilities
+namespace JustCSharp.Extensions.ReportViewer.ASPNetCore.Utilities
 {
     public static class ReportViewerModelExtension
     {

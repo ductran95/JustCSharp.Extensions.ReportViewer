@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace JustCSharp.ReportViewer
+namespace JustCSharp.Extensions.ReportViewer
 {
 	public class ReportParameterInfo
 	{

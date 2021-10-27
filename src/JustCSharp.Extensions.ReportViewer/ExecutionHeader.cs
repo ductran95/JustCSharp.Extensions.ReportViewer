@@ -1,7 +1,7 @@
 ﻿using System.Runtime.Serialization;
 using System.ServiceModel.Channels;
 
-namespace JustCSharp.ReportViewer.ReportServiceExecution
+namespace JustCSharp.Extensions.ReportViewer.ReportServiceExecution
 {
 	/// <summary> 
 	/// Functionality added to the Microsoft Sql Server Reporting Services 

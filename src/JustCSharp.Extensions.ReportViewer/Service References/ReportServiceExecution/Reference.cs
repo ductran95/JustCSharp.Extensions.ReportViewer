@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace JustCSharp.ReportViewer.ReportServiceExecution
+namespace JustCSharp.Extensions.ReportViewer.ReportServiceExecution
 {
     
     
@@ -2215,21 +2215,21 @@ namespace JustCSharp.ReportViewer.ReportServiceExecution
     static partial void ConfigureEndpoint(System.ServiceModel.Description.ServiceEndpoint serviceEndpoint, System.ServiceModel.Description.ClientCredentials clientCredentials);
         
         public ReportExecutionServiceSoapClient(EndpointConfiguration endpointConfiguration) : 
-                base(JustCSharp.ReportViewer.ReportServiceExecution.ReportExecutionServiceSoapClient.GetBindingForEndpoint(endpointConfiguration), JustCSharp.ReportViewer.ReportServiceExecution.ReportExecutionServiceSoapClient.GetEndpointAddress(endpointConfiguration))
+                base(JustCSharp.Extensions.ReportViewer.ReportServiceExecution.ReportExecutionServiceSoapClient.GetBindingForEndpoint(endpointConfiguration), JustCSharp.Extensions.ReportViewer.ReportServiceExecution.ReportExecutionServiceSoapClient.GetEndpointAddress(endpointConfiguration))
         {
             this.Endpoint.Name = endpointConfiguration.ToString();
             ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
         }
         
         public ReportExecutionServiceSoapClient(EndpointConfiguration endpointConfiguration, string remoteAddress) : 
-                base(JustCSharp.ReportViewer.ReportServiceExecution.ReportExecutionServiceSoapClient.GetBindingForEndpoint(endpointConfiguration), new System.ServiceModel.EndpointAddress(remoteAddress))
+                base(JustCSharp.Extensions.ReportViewer.ReportServiceExecution.ReportExecutionServiceSoapClient.GetBindingForEndpoint(endpointConfiguration), new System.ServiceModel.EndpointAddress(remoteAddress))
         {
             this.Endpoint.Name = endpointConfiguration.ToString();
             ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
         }
         
         public ReportExecutionServiceSoapClient(EndpointConfiguration endpointConfiguration, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(JustCSharp.ReportViewer.ReportServiceExecution.ReportExecutionServiceSoapClient.GetBindingForEndpoint(endpointConfiguration), remoteAddress)
+                base(JustCSharp.Extensions.ReportViewer.ReportServiceExecution.ReportExecutionServiceSoapClient.GetBindingForEndpoint(endpointConfiguration), remoteAddress)
         {
             this.Endpoint.Name = endpointConfiguration.ToString();
             ConfigureEndpoint(this.Endpoint, this.ClientCredentials);

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using JustCSharp.ReportViewer.ReportServiceExecution;
+using JustCSharp.Extensions.ReportViewer.ReportServiceExecution;
 
-namespace JustCSharp.ReportViewer
+namespace JustCSharp.Extensions.ReportViewer
 {
 	public static class ReportServiceHelpers
 	{
@@ -61,7 +61,7 @@ namespace JustCSharp.ReportViewer
 			}
 		}
 
-		public static JustCSharp.ReportViewer.ReportService.ReportParameter[] GetReportParameters(ReportViewerModel model, bool forRendering = false)
+		public static JustCSharp.Extensions.ReportViewer.ReportService.ReportParameter[] GetReportParameters(ReportViewerModel model, bool forRendering = false)
 		{
 			var url = model.ServerUrl + ((model.ServerUrl.ToSafeString().EndsWith("/")) ? "" : "/") + "ReportService2005.asmx";
 
@@ -71,14 +71,14 @@ namespace JustCSharp.ReportViewer
 			service.ClientCredentials.Windows.ClientCredential = (System.Net.NetworkCredential)(model.Credentials ?? System.Net.CredentialCache.DefaultCredentials);
 
 			string historyID = null;
-			JustCSharp.ReportViewer.ReportService.ParameterValue[] values = null;
-			JustCSharp.ReportViewer.ReportService.DataSourceCredentials[] rsCredentials = null;
+			JustCSharp.Extensions.ReportViewer.ReportService.ParameterValue[] values = null;
+			JustCSharp.Extensions.ReportViewer.ReportService.DataSourceCredentials[] rsCredentials = null;
 			
 			var parameters = service.GetReportParametersAsync(model.ReportPath, historyID, false, values, rsCredentials).Result;	//set it to load the not for rendering so that it's hopefully quicker than the whole regular call
 			
 			if (model != null && model.Parameters != null && model.Parameters.Any())
 			{
-				var tempParameters = new List<JustCSharp.ReportViewer.ReportService.ParameterValue>();
+				var tempParameters = new List<JustCSharp.Extensions.ReportViewer.ReportService.ParameterValue>();
 				foreach (var parameter in parameters)
 				{
 					if (model.Parameters.ContainsKey(parameter.Name))
@@ -88,7 +88,7 @@ namespace JustCSharp.ReportViewer
 						{
 							foreach (var value in providedParameter.Where(x => !String.IsNullOrEmpty(x)))
 							{
-								tempParameters.Add(new JustCSharp.ReportViewer.ReportService.ParameterValue()
+								tempParameters.Add(new JustCSharp.Extensions.ReportViewer.ReportService.ParameterValue()
 								{
 									Label = parameter.Name,
 									Name = parameter.Name,

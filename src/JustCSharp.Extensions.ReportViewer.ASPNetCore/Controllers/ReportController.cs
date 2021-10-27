@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Linq;
 using System.Net.Http;
-using JustCSharp.ReportViewer.ASPNetCore.Utilities;
+using JustCSharp.Extensions.ReportViewer.ASPNetCore.Utilities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Mvc;
 
-namespace JustCSharp.ReportViewer.ASPNetCore.Controllers
+namespace JustCSharp.Extensions.ReportViewer.ASPNetCore.Controllers
 {
 	public abstract class ReportController : Controller
 	{

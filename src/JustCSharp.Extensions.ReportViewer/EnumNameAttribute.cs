@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace JustCSharp.ReportViewer
+namespace JustCSharp.Extensions.ReportViewer
 {
 	public class EnumNameAttribute : Attribute
 	{

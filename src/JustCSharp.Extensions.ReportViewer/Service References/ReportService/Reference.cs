@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace JustCSharp.ReportViewer.ReportService
+namespace JustCSharp.Extensions.ReportViewer.ReportService
 {
     
     

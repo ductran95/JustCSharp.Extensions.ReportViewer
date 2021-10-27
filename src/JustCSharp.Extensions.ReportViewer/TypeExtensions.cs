@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace JustCSharp.ReportViewer
+namespace JustCSharp.Extensions.ReportViewer
 {
 	public static class TypeExtensions
 	{

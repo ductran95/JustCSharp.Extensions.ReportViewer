@@ -3,7 +3,7 @@ using System.Linq;
 using System.ServiceModel;
 using System.Threading.Tasks;
 
-namespace JustCSharp.ReportViewer.ReportServiceExecution
+namespace JustCSharp.Extensions.ReportViewer.ReportServiceExecution
 {
     public partial class ReportExecutionServiceSoapClient
     {
@@ -56,7 +56,7 @@ namespace JustCSharp.ReportViewer.ReportServiceExecution
 		{
 			OperationContextScope context = new OperationContextScope(this.InnerChannel);
 
-			JustCSharp.ReportViewer.ReportServiceExecution.ExecutionHeader executionHeaderData = new JustCSharp.ReportViewer.ReportServiceExecution.ExecutionHeader()
+			JustCSharp.Extensions.ReportViewer.ReportServiceExecution.ExecutionHeader executionHeaderData = new JustCSharp.Extensions.ReportViewer.ReportServiceExecution.ExecutionHeader()
 			{
 				ExecutionID = executionID,
 				//ExecutionIDForWcfSoapHeader = executionID

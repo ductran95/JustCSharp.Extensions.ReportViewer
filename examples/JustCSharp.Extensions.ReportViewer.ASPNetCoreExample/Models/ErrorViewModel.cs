@@ -1,6 +1,4 @@
-using System;
-
-namespace JustCSharp.ReportViewer.ASPNetCoreExample.Models
+namespace JustCSharp.Extensions.ReportViewer.ASPNetCoreExample.Models
 {
     public class ErrorViewModel
     {

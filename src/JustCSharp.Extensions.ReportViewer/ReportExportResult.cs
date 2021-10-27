@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace JustCSharp.ReportViewer
+namespace JustCSharp.Extensions.ReportViewer
 {
 	public class ReportExportResult
 	{

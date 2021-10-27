@@ -1,4 +1,4 @@
-﻿namespace JustCSharp.ReportViewer
+﻿namespace JustCSharp.Extensions.ReportViewer
 {
 	public enum ReportFormats
 	{

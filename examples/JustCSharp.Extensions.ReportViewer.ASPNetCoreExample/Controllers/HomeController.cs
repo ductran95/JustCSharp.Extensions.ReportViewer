@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
+using JustCSharp.Extensions.ReportViewer.ASPNetCoreExample.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using JustCSharp.ReportViewer.ASPNetCoreExample.Models;
 
-namespace JustCSharp.ReportViewer.ASPNetCoreExample.Controllers
+namespace JustCSharp.Extensions.ReportViewer.ASPNetCoreExample.Controllers
 {
     public class HomeController : Controller
     {

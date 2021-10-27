@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.AspNetCore.Html;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace JustCSharp.ReportViewer.ASPNetCore.Utilities
+namespace JustCSharp.Extensions.ReportViewer.ASPNetCore.Utilities
 {
 	public static class CoreHtmlHelpers
 	{
